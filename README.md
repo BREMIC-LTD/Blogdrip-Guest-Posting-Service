@@ -1,16 +1,28 @@
-# wsdl-wp-posting
+# blogdrip-guest-posting-services
 
-## Purpose 
-This is a wordpress plug-in to help you posting via your other application via SOAP protocal.
-W
+## Purpose
+This Wordpress plug-in is made to help control your wordpress website through RESTful API
+
 ## How to use this plug-in
-1. Using sbws.wsdl to install `SOAP` to your `application`.
-2. Install this plug-in to your wordpress site.
-3. Go to `admin dashboard` then `settings` > `blogdrip`
-4. Putting the token you have generate from your application
+1. Install this plug-in to your wordpress site.
+2. Open the plug-in setting for `Blogdrip Guest Posting Service` and put the BlogDrip token
+3. To call any APIs, the caller need to pass the correct token in every request via header `x-authen-token`
+
+## Prerequisite
+1. You should have plug-in `Yoast SEO` to use full abilities of this plug-in during POSTING an article
+2. You should have plug-in `Link Library` to use `bd/v1/link/...`
 
 ## How it works
-When you call `insertPostRequest` via SOAP you will create or update a post relate to the `id`.
+1. endpoint: `bd/v1/upload` to upload media to the web
+bd/v1/version
+bd/v1/link/categories
+bd/v1/link/submit
+bd/v1/link/delete
+bd/v1/link/categories
+bd/v1/blog/categories
+bd/v1/blog/submit
+bd/v1/blog/delete
+bd/v1/blog/url
 
 ## Description
 Description: WordPress Web Service is used to access WordPress resources via WSDL and SOAP. After installation simply open http://yoursite.com/blog/index.php/sbws to test your plugin.
@@ -19,7 +31,7 @@ Description: WordPress Web Service is used to access WordPress resources via WSD
 Copyright 2021 BREMIC Digital Services (email: servicedesk@bremic.co.th)
 
 This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License, version 3, as 
+it under the terms of the GNU General Public License, version 3, as
 published by the Free Software Foundation.
 
 This program is distributed in the hope that it will be useful,
