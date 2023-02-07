@@ -2,12 +2,16 @@
 
 /*
 Plugin Name: Blogdrip Guest Posting Service
-Plugin URI: https://blogdrip.com/
+Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
 Description: Get additional income from your website or blog by placing blog posts and text ads automatically.
 Version: 1.0.0
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
+Requires at least: 6.1
 Requires PHP:      7.4
+License:           GPL v3 or later
+License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+Update URI:        https://my.blogdrip.com/wordpress/update-plugin.json
 */
 
 /*  Copyright 2021 BREMIC Digital Services (email: servicedesk@bremic.co.th)
@@ -31,16 +35,6 @@ release: 1.0.0
 First release for this plug-in
 
 */
-
-/**
- * Set auto update
- */
-require_once(dirname(__FILE__) . "/plugin-update-checker/plugin-update-checker.php");
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://my.blogdrip.com/wordpress/update-plugin.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
-	'unique-plugin-or-theme-slug'
-);
 
 require_once(dirname(__FILE__) . "/includes/bdgps-access.php");
 
@@ -111,20 +105,6 @@ function add_settings_menu_page() {
 	add_action('admin_init', 'settings_menu_page_init');
 }
 
-function add_settings_link($links, $file) {
-	if ( current_filter() === 'plugin_action_links_'.plugin_basename(__FILE__) ) {
-		$url = admin_url( 'options-general.php?page=blogdrip_plugin' );
-	}
-
-	// Prevent warnings in PHP 7.0+ when a plugin uses this filter incorrectly.
-	$links = (array) $links;
-	$links[] = sprintf( '<a href="%s">%s</a>', $url,'Settings' );
-
-	return $links;
-}
-
-add_filter( 'plugin_action_links_'.plugin_basename(__FILE__), 'add_settings_link', 50, 2 );
-add_filter( 'network_admin_plugin_action_links','add_settings_link', 50, 2 );
 add_action('admin_menu', 'add_settings_menu_page', 50);
 
 // Add allow protocal
