@@ -3,8 +3,8 @@
 /*
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://blogdrip.com/
-Description: WordPress Web Service is used to access WordPress resources via APIs. After installation simply open https://yoursite.com/wp-json/bd/v1/version to test the plugin.
-Version: 1.7.1
+Description: Get additional income from your website or blog by placing blog posts and text ads automatically.
+Version: 1.0.0
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
 Requires PHP:      7.4
@@ -27,8 +27,8 @@ Requires PHP:      7.4
 */
 
 /* Change Log
-release: 0.0.1
-Add feature `featureImage`
+release: 1.0.0
+First release for this plug-in
 
 */
 

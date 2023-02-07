@@ -1,7 +1,7 @@
 # blogdrip-guest-posting-services
 
 ## Purpose
-This Wordpress plug-in is made to help control your wordpress website through RESTful API
+This Wordpress plug-in is made to help control your wordpress website through RESTful API and get additional income from your website or blog by placing blog posts and text ads automatically.
 
 ## How to use this plug-in
 1. Install this plug-in to your wordpress site.
@@ -14,18 +14,15 @@ This Wordpress plug-in is made to help control your wordpress website through RE
 
 ## How it works
 1. endpoint: `bd/v1/upload` to upload media to the web
-bd/v1/version
-bd/v1/link/categories
-bd/v1/link/submit
-bd/v1/link/delete
-bd/v1/link/categories
-bd/v1/blog/categories
-bd/v1/blog/submit
-bd/v1/blog/delete
-bd/v1/blog/url
-
-## Description
-Description: WordPress Web Service is used to access WordPress resources via WSDL and SOAP. After installation simply open http://yoursite.com/blog/index.php/sbws to test your plugin.
+1. endpoint: `bd/v1/version` to get current plug-in version
+1. endpoint: `bd/v1/link/categories` to get all exists link's categories
+1. endpoint: `bd/v1/link/submit` to submit link
+1. endpoint: `bd/v1/link/delete` to delete link
+1. endpoint: `bd/v1/link/categories` to 
+1. endpoint: `bd/v1/blog/categories` to get all exists blog's categories
+1. endpoint: `bd/v1/blog/submit` to submit blog/post
+1. endpoint: `bd/v1/blog/delete` to delete blog/post
+1. endpoint: `bd/v1/blog/url` to get private url from post_id
 
 ## Lisence
 Copyright 2021 BREMIC Digital Services (email: servicedesk@bremic.co.th)
