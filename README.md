@@ -24,8 +24,8 @@ This Wordpress plug-in is made to help control your wordpress website through RE
 1. endpoint: `bd/v1/blog/delete` to delete blog/post
 1. endpoint: `bd/v1/blog/url` to get private url from post_id
 
-## Lisence
-Copyright 2021 BREMIC Digital Services (email: servicedesk@bremic.co.th)
+## Licence
+Copyright 2021 BLOGDRIP (email: servicedesk@blogdrip.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 3, as
