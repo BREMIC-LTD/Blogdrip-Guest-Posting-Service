@@ -4,7 +4,7 @@
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
 Description: Get additional income from your website or blog by placing blog posts and text ads automatically.
-Version: 1.0.0
+Version: 1.0
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
 Requires at least: 6.1
@@ -31,7 +31,7 @@ Update URI:        https://my.blogdrip.com/wordpress/update-plugin.json
 */
 
 /* Change Log
-release: 1.0.0
+release: 1.0
 First release for this plug-in
 
 */
@@ -104,6 +104,21 @@ function add_settings_menu_page() {
 
 	add_action('admin_init', 'settings_menu_page_init');
 }
+
+function add_settings_link($links, $file) {
+	if ( current_filter() === 'plugin_action_links_'.plugin_basename(__FILE__) ) {
+		$url = admin_url( 'options-general.php?page=blogdrip_plugin' );
+	}
+
+	// Prevent warnings in PHP 7.0+ when a plugin uses this filter incorrectly.
+	$links = (array) $links;
+	$links[] = sprintf( '<a href="%s">%s</a>', $url,'Settings' );
+
+	return $links;
+}
+
+add_filter( 'plugin_action_links_'.plugin_basename(__FILE__), 'add_settings_link', 50, 2 );
+add_filter( 'network_admin_plugin_action_links','add_settings_link', 50, 2 );
 
 add_action('admin_menu', 'add_settings_menu_page', 50);
 
@@ -251,8 +266,8 @@ function link_delete($request) {
 		$postId = intval($request->get_param( 'id' ));
 
 		if ($postId > 0) {
-			$findPost = get_post($postId, OBJECT);
-			if (findPost != null) {
+			$findPost = get_post($postId);
+			if ($findPost != null) {
 				$result = wp_delete_post($postId, true);
 			}
 		}
@@ -414,10 +429,9 @@ function blog_delete($request) {
 	try {
 		$result = false;
 		$postId = intval($request->get_param( 'id' ));
-
 		if ($postId > 0) {
-			$findPost = get_post($postId, OBJECT);
-			if (findPost != null) {
+			$findPost = get_post($postId);
+			if ($findPost != null) {
 				$result = wp_delete_post($postId, true);
 			}
 		}

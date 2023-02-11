@@ -1,9 +1,8 @@
 <?php
 $credential = esc_attr(get_option('blogdrip_token', '00000000-0000-0000-0000-000000000000'));
 define("BDGPS_TOKEN", $credential);
-define("BDGPS_PLUGIN_NAME", "blogdrip-web-service");
+define("BDGPS_PLUGIN_NAME", "blogdrip-guest-posting-service");
 define("BDGPS_ENTRY_FILE", dirname(__FILE__) . "/../" . BDGPS_PLUGIN_NAME . ".php");
-define("BDGPS_BLOG_URL", "%{BLOG_URL}");
 define("BDGPS_CACHE_DIR", dirname(__FILE__) . "/../cache");
 
 function BDGPS_getVersion() {

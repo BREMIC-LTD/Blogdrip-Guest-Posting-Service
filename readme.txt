@@ -53,5 +53,5 @@ How to use this plug-in
 * To call any APIs, the caller need to pass the correct token in every request via header `x-authen-token`
 
 == Changelog ==
-= 1.0.0 =
+= 1.0 =
 * First release
