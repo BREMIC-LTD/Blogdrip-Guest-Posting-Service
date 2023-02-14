@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This Wordpress plug-in is made to generate income by automate guest posting and text advertising
+This Wordpress plug-in is made to generate income by guest posting and text advertising
 
 == Description ==
 [Blogdrip-Guest-Posting-Service](https://blogdrip.com) is a wordpress plugin that allows you to sell guest posts and contextual ads and get paid by Wise or Paypal.
