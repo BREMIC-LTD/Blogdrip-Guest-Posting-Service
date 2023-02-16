@@ -4,7 +4,7 @@
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
 Description: Get additional income from your website or blog by placing blog posts and text ads automatically.
-Version: 1.0
+Version: 1.1
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
 Requires at least: 6.1
@@ -33,6 +33,9 @@ Update URI:        https://my.blogdrip.com/wordpress/update-plugin.json
 /* Change Log
 release: 1.0
 First release for this plug-in
+
+release: 1.1
+Update Readme
 
 */
 

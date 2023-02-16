@@ -4,7 +4,7 @@ Tags: blogpost manager, text link manager,
 Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -41,3 +41,6 @@ How to use this plug-in
 == Changelog ==
 = 1.0 =
 * First release
+
+= 1.1 =
+* Update readme
