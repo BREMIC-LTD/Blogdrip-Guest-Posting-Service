@@ -3,7 +3,7 @@
 /*
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
-Description: Get additional income from your website or blog by placing blog posts and text ads automatically.
+Description: Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
 Version: 1.1
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
@@ -14,7 +14,7 @@ License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 Update URI:        https://my.blogdrip.com/wordpress/update-plugin.json
 */
 
-/*  Copyright 2021 BREMIC Digital Services (email: servicedesk@bremic.co.th)
+/*  Copyright 2021 BLOGDRIP LTD (email: servicedesk@logdrip.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 3, as
