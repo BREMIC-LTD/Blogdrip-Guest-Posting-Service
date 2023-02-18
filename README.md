@@ -1,7 +1,7 @@
 # blogdrip-guest-posting-services
 
 ## Purpose
-This Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard, website owners are able to make multiple accounts for staff or external writers.
+This Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
 
 ## How to use this plug-in
 1. Install this plug-in to your wordpress site.
