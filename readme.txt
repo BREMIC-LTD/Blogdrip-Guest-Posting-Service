@@ -8,12 +8,12 @@ Stable tag: 1.1
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This Wordpress plug-in is made to manage your blogposts and text links for multiple websites from 1 dashboard
+This Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
 
 == Description ==
-[Blogdrip-Guest-Posting-Service](https://blogdrip.com) is a wordpress plugin to manage blogposts and text links for multiple websites from 1 dashboard.
+[Blogdrip-Guest-Posting-Service](https://blogdrip.com) Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
 
-To get started [sign up](https://blogdrip.com/register/ submit your website at the platform and we privide a key that you need to submit at the plugin settings.
+To get started [sign up](https://blogdrip.com/register/ submit your website at the platform and we provide a key that you need to submit at the plugin settings.
 
 
 **Full control**<br />
