@@ -1,6 +1,6 @@
 === Blogdrip Guest Posting Service ===
 Contributors: whaikung
-Tags: blogpost manager, text link manager, 
+Tags: guestpost manager, text link manager, 
 Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 7.4
