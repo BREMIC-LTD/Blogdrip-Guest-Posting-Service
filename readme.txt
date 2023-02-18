@@ -25,9 +25,6 @@ We build in the API from copyscape.com so each blog post will be checked for dup
 **Free images (copyright free)**<br />
 We provide free images and copyright free from Pixabay for your blog posts publications.
 
-**Safe and secure**<br />
-All your personal data is save. Advertisers only can see your websites and they are not able to see your details or contact information.
-
 == Installation ==
 Prerequisite
 * You should have plug-in `Yoast SEO` to use full abilities of this plug-in during POSTING an article
