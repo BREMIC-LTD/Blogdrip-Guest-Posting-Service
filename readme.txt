@@ -41,3 +41,6 @@ How to use this plug-in
 
 = 1.1 =
 * Update readme
+
+= 1.2 =
+* Add auto update
