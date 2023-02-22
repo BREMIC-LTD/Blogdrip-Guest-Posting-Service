@@ -44,3 +44,6 @@ How to use this plug-in
 
 = 1.2 =
 * Add auto update
+
+= 1.8 =
+* Bump version
