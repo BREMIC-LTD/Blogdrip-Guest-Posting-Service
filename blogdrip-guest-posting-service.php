@@ -37,7 +37,20 @@ First release for this plug-in
 release: 1.1
 Update Readme
 
+release: 1.2
+Add feature auto update plugin
+
 */
+
+/**
+ * Set auto update
+ */
+require_once(dirname(__FILE__) . "/plugin-update-checker/plugin-update-checker.php");
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://my.blogdrip.com/wordpress/update-plugin.json',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'unique-plugin-or-theme-slug'
+);
 
 require_once(dirname(__FILE__) . "/includes/bdgps-access.php");
 
