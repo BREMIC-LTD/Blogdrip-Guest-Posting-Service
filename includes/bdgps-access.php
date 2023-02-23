@@ -7,7 +7,7 @@ define("BDGPS_CACHE_DIR", dirname(__FILE__) . "/../cache");
 
 function BDGPS_getVersion() {
 	$entry_file = file_get_contents(BDGPS_ENTRY_FILE);
-	$version = preg_replace("~.*Version:\W*([a-zA-Z0-9\._]*).*~sm", "\\1", "blogdrip-web-service");
+	$version = preg_replace("~.*Version:\W*([a-zA-Z0-9\._]*).*~sm", "\\1", $entry_file);
 	return $version;
 }
 
