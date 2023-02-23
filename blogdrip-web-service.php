@@ -60,6 +60,13 @@ require_once(dirname(__FILE__) . "/includes/bdgps-access.php");
 /**
  * Add left menu to set credential
  */
+
+function plugin_name_get_version() {
+    $plugin_data = get_plugin_data( __FILE__ );
+    $plugin_version = $plugin_data['Version'];
+    return $plugin_version;
+}
+
 function settings_page() {
 	if (!current_user_can('activate_plugins')) return;
 	?>
@@ -184,7 +191,7 @@ function bd_version($request) {
 		header("HTTP/1.1 403 Forbidden");
 		exit;
 	}
-	return BDGPS_getVersion();
+	return plugin_name_get_version();
 }
 
 // GET bd/v1/link/categories
