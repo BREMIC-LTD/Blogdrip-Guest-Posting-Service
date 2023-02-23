@@ -46,4 +46,4 @@ How to use this plug-in
 * Add auto update
 
 = 1.8 =
-* Bump version
+Rename main plugin file

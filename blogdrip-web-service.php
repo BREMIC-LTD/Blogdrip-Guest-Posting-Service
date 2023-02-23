@@ -41,9 +41,6 @@ release: 1.2
 Add feature auto update plugin
 
 release: 1.8
-Bump version to continue from the old version after move github repo
-
-release: 1.9
 Rename main plugin file
 
 */
