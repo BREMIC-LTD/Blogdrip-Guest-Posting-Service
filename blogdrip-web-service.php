@@ -50,7 +50,7 @@ Rename main plugin file
  */
 require_once(dirname(__FILE__) . "/plugin-update-checker/plugin-update-checker.php");
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://my.blogdrip.com/wordpress/update-plugin.json',
+	'https://blogger-webservice-testing.azurewebsites.net/wordpress/update-plugin.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'unique-plugin-or-theme-slug'
 );

@@ -15,10 +15,6 @@ function BDGPS_getBlogUrl() {
 	return (defined("WP_HOME")) ? WP_HOME : get_option("home", "");
 }
 
-function BDGPS_getPluginUrl() {
-	return BDGPS_getBlogUrl() . "/wp-content/plugins/" . BDGPS_PLUGIN_NAME;
-}
-
 function BDGPS_genUniqueCode($length = 8) {
 	$code = md5(uniqid(rand(), true));
 	if(is_int($length)) return substr($code, 0, $length);
