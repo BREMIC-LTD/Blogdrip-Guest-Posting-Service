@@ -4,7 +4,7 @@
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
 Description: Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
-Version: 1.8
+Version: 2.0
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
 Requires at least: 6.1
@@ -57,7 +57,7 @@ Fixed Get current version
  */
 require_once(dirname(__FILE__) . "/plugin-update-checker/plugin-update-checker.php");
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://blogger-webservice-testing.azurewebsites.net/wordpress/update-plugin.json',
+	'https://my.blogdrip.com/wordpress/update-plugin.json',
 	__FILE__, //Full path to the main plugin file or functions.php.
 	'unique-plugin-or-theme-slug'
 );
