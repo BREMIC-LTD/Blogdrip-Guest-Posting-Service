@@ -4,7 +4,7 @@
 Plugin Name: Blogdrip Guest Posting Service
 Plugin URI: https://github.com/BREMIC-LTD/Blogdrip-Guest-Posting-Service
 Description: Wordpress plug-in is made to publish and manage your guest posts and text links for multiple websites from 1 dashboard at https://my.blogdrip.com, website owners are able to make multiple accounts for staff or external writers.
-Version: 1.8
+Version: 2.0
 Author: BlogDrip Content Marketing Platform
 Author URI: https://blogdrip.com/
 Requires at least: 6.1
@@ -43,6 +43,13 @@ Add feature auto update plugin
 release: 1.8
 Bump version to continue from the old version after move github repo
 
+release: 1.9
+Skip due to rollback to use the old repo
+
+release: 2.0
+Fixed auto-update and keep activated.
+Fixed Get current version
+
 */
 
 /**
@@ -60,6 +67,13 @@ require_once(dirname(__FILE__) . "/includes/bdgps-access.php");
 /**
  * Add left menu to set credential
  */
+
+function plugin_name_get_version() {
+    $plugin_data = get_plugin_data( __FILE__ );
+    $plugin_version = $plugin_data['Version'];
+    return $plugin_version;
+}
+
 function settings_page() {
 	if (!current_user_can('activate_plugins')) return;
 	?>
@@ -184,7 +198,7 @@ function bd_version($request) {
 		header("HTTP/1.1 403 Forbidden");
 		exit;
 	}
-	return BDGPS_getVersion();
+	return plugin_name_get_version();
 }
 
 // GET bd/v1/link/categories

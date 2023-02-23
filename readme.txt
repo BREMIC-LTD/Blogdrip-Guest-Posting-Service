@@ -46,4 +46,11 @@ How to use this plug-in
 * Add auto update
 
 = 1.8 =
-* Bump version
+Bump version to continue from the old version after move github repo
+
+= 1.9 =
+Skip due to rollback to use the old repo
+
+= 2.0 =
+Fixed auto-update and keep activated.
+Fixed Get current version
