@@ -41,7 +41,14 @@ release: 1.2
 Add feature auto update plugin
 
 release: 1.8
-Rename main plugin file
+Bump version to continue from the old version after move github repo
+
+release: 1.9
+Skip due to rollback to use the old repo
+
+release: 2.0
+Fixed auto-update and keep activated.
+Fixed Get current version
 
 */
 
